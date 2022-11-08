@@ -1,0 +1,14 @@
+<p>Go to positions</p>
+<br>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="latitude"> 
+    <label for="float-input">Latitude</label>
+</span>
+<br><br>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="longtitude"> 
+    <label for="float-input">Longtitude</label>
+</span>
+
+<br><br>
+<button pButton type="button" label="Locate" (click)="onBtnLocateClick()"></button>

@@ -1,0 +1,117 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page {
+    font-size: small;
+    display: flex;
+    
+    padding: 20px;
+    margin: 10px;
+}
+
+#left, #right {
+    padding: 5px;
+    width: 500px;
+}
+
+#post-span{
+    width: 90%;
+    height: 15vh;
+
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+#box-comment-left {
+    padding-left: 0;
+    padding-top: 10px;
+}
+#box-right {
+    display: flex;
+}
+
+#p-tag-right {
+    min-width: 20vh;
+    padding: 0 2px 0 0;
+    margin: 0 5px 0 0;
+}
+
+#box-input{
+    width: 70%;
+    padding: 0 ;
+    margin: 0;
+}
+
+#input-name {
+    width: 80%;
+    height: 5vh;
+
+    margin-top: 8px;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#input-comment{
+    width: 80%;
+    min-height: 15vh;
+
+    margin-top: 7px;
+    
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#btn-newComment{
+    width: 80%;
+    
+    text-align: center;
+}
+
+#btn-comment {
+    background-color: rgb(35, 180, 35);
+    color: white;
+
+    width: 80px;
+    height: 25px;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    margin: 3px;
+    padding: 2px;
+}
+
+#btn-clear {
+    background-color: rgb(200, 30, 30);
+    color: white;
+
+    width: 80px;
+    height: 25px;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    margin: 3px;
+    padding: 2px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#btn-comment:hover, #btn-comment:active {
+    background-color: rgba(35, 180, 35, 0.7);
+}
+#btn-comment:active {
+    background-color: rgb(35, 180, 35);
+}
+
+#btn-clear:hover, #btn-clear:active {
+    background-color: rgba(200, 30, 30, 0.7);
+}
+#btn-clear:active {
+    background-color: rgb(200, 30, 30);
+}

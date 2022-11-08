@@ -1,0 +1,20 @@
+<div id="boxLeft" class="boxLeft">
+    <div id="commentBox">
+        <div id="commentBox-name"><b>{{ name }}</b></div>
+        <div id="commentBox-comment">{{ comment }}</div>
+    </div>
+
+    <div [style.display]="display ? 'block' : 'none' " id="edit-box">
+        <div>
+            <textarea type="text" #newComment id="inputEditComment" [style.color]="'rgb(100, 100, 100)'"></textarea>
+        </div>
+        <div>
+            <button (click)="editComment(newComment.value)">Done</button>
+        </div>
+    </div>
+
+    <div id="boxBtnLeft">
+        <button id="btn-edit" (click)="editBtnFunc()">Edit</button>
+        <button id="btn-del" (click)="deleteEventFunc()">Delete</button>
+    </div>
+</div>

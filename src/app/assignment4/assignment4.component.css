@@ -1,0 +1,17 @@
+.map-container{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    bottom: 0;
+    right: 300px;
+    padding: 20px;
+}
+
+.locator-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+}

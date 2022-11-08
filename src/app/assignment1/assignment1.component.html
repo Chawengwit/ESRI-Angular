@@ -1,0 +1,32 @@
+<div id="page">
+    <div id="left">
+        <div>
+            <p>Post</p>
+            <div id="post-span">My name is Chawengwit, Nice to mee you krub,</div>
+        </div>
+        <p [style.padding]="'0'" [style.padding-top]="'10px'" [style.margin]="'0'">Comments</p>
+        <div [style.display]="comment.st ? 'block' : 'none'" id="box-comment-left" *ngFor="let comment of comments">
+            <app-comment (editIdEvent)="editEventParent($event)" (newComment)="editEventParent($event)" (deleteEvent)="delEventParent($event)" [name]="comment.n" [comment]="comment.c" [id]="comment.i" [display]="comment.ds" ></app-comment>
+        </div>
+    </div>
+    <!-- ------------------- -->
+    <div id="right">
+        <p>New Comment</p>
+        <div id="box-right">
+            <div id="p-tag-right">
+                <p>Name:</p>
+                <p>Comment:</p>
+            </div>
+            <div id="box-input">
+                <input id="input-name" [(ngModel)]="name" type="text">
+                <textarea id="input-comment" [(ngModel)]="comment"></textarea>
+                <div id="btn-newComment">
+                    <button id="btn-comment" (click)="pushValue()">Comment</button>
+                    <button id="btn-clear" (click)="clearValue()">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

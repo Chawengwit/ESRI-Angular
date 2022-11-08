@@ -1,0 +1,53 @@
+<p>Calculator</p>
+
+<div id="calculator">
+    <!-- <p-inputNumber 
+        id="displayBox" 
+        [(ngModel)]="displayValue" 
+        mode="decimal"
+        [useGrouping]="false"
+        [maxFractionDigits]="2"
+        (keyup)="onKey($event)"
+
+    ></p-inputNumber> -->
+    <div class="p-inputgroup">  
+        <input 
+            id="displayBox" 
+            type="text" 
+            pInputText
+            [(ngModel)]="displayValInComponent"
+        >      
+    </div>
+
+    <div id="btn-container">
+        <div id="btn-clear" (click)="displayBtnClick('C')">C</div>
+        
+        <div id="btn-number">
+            <div id="row">
+                <div (click)="displayBtnClick('7')">7</div>
+                <div (click)="displayBtnClick('8')">8</div>
+                <div (click)="displayBtnClick('9')">9</div>
+                <div (click)="displayBtnClick('%')">%</div>
+            </div>
+            <div id="row">
+                <div (click)="displayBtnClick('4')">4</div>
+                <div (click)="displayBtnClick('5')">5</div>
+                <div (click)="displayBtnClick('6')">6</div>
+                <div (click)="displayBtnClick('X')">X</div>
+            </div>
+            <div id="row">
+                <div (click)="displayBtnClick('1')">1</div>
+                <div (click)="displayBtnClick('2')">2</div>
+                <div (click)="displayBtnClick('3')">3</div>
+                <div (click)="displayBtnClick('-')">-</div>
+            </div>
+            <div id="row">
+                <div (click)="displayBtnClick('0')">0</div>
+                <div (click)="displayBtnClick('.')">.</div>
+                <div (click)="displayBtnClick('=')">=</div>
+                <div (click)="displayBtnClick('+')">+</div>
+            </div>
+    </div>
+    </div>
+</div>
+
